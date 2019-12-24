@@ -1,0 +1,119 @@
+@import 'common/normalize';
+
+html,
+body{
+	display: block;
+	color: #000;
+	margin: 0;
+	font-family: 'Roboto';
+	position: relative;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.content {
+	flex: 1;
+	position: relative;
+	margin-top: 60px;
+}
+:root{
+	--norilsk: rgba(0, 0, 0, 0.75);
+	--gray-cardinal: rgba(0, 0, 0, 0.25);
+	--have-rights: rgba(255, 255, 255, 0.95);
+	--burgundi: #E31E27;
+	--kanareka: #F7AC24;
+	--subzero: #00458B;
+	--thief: #000000;
+	--hulk: #219653;
+	--medium-gray: rgba(0, 0, 0, 0.5);
+}
+@mixin super-big-title {
+	font-family: 'Stolzl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 58px;
+	color: #000000;
+};
+@mixin big-title {
+	font-family: 'Stolzl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+	color: #000000;
+};
+@mixin medium-title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 125%;
+	color: #000000;
+};
+@mixin small-title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+};
+@mixin text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	color: #000000;
+};
+@mixin button-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+};
+@mixin link {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	text-decoration-line: underline;
+	color: var(--norilsk);
+};
+@mixin tab {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+};
+@mixin footer-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+};
+@mixin description {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color: #000000;
+};
+
+@import 'common/adaptive';
+@import 'common/fonts';
+@import 'common/header';
+@import 'common/footer';
+@import 'pages/index';
