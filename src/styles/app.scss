@@ -152,9 +152,18 @@ body{
 	font-size: 16px;
 	line-height: 19px;
 };
+.title{
+	padding-bottom: 40px;
+	border-bottom  : 1px solid rgba(0, 0, 0, 0.15);
+	max-width: 1360px;
+	margin: 75px auto 0;
+	@include super-big-title;
+}
 
 @import 'common/adaptive';
 @import 'common/fonts';
 @import 'common/header';
 @import 'common/footer';
+@import 'common/form';
 @import 'pages/index';
+@import 'pages/catalog';

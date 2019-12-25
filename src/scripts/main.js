@@ -1,3 +1,10 @@
+/*Def скрипты*/
+if (document.title == 'Главная') {
+	$(document).find('.breadcrumbs').hide();
+}
+/*Def скрипты Конец*/
+
+
 /*Поведение хедера*/
 var directionScroll = [];
 $(document).on('scroll', function (e) {

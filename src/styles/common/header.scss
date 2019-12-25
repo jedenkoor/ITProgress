@@ -6,6 +6,7 @@
 	z-index: 100;
 	transform: translateY(-100%);
 	transition: .5s;
+	height: 84px;
 	&.visible{
 		transform: translateY(0);
 		transition: .5s;
@@ -275,5 +276,25 @@
 				color: var(--gray-cardinal);
 			}
 		}
+	}
+}
+
+.breadcrumbs{
+	position: absolute;
+	top: 110px;
+	display: flex;
+	align-items: center;
+	max-width: 1360px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	@include description;
+	color: var(--norilsk);
+	a,
+	svg{
+		margin-right: 15px;
+	}
+	span{
+		color: var(--subzero)
 	}
 }
