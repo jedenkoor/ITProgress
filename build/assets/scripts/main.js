@@ -4,7 +4,7 @@ $(document).on('scroll', function (e) {
 	directionScroll.push($(document).scrollTop());
 	if (directionScroll[0] < directionScroll[1]) {
 		directionScroll = directionScroll.slice(0, 0);
-		if ($(document).scrollTop() > 50) {
+		if ($(document).scrollTop() > 150) {
 			$(document).find('.header').removeClass('visible');
 		}
 	}
@@ -26,4 +26,22 @@ $(document).on('click touchend', function (e) {
 		div.removeClass('active');
 	}
 });
-/*Поис Конец*/
+function resizable(el, factor) {
+	var int = Number(factor) || 7.7;
+	function resize() { el.style.width = ((el.value.length + 1) * int) + 'px' }
+	var e = 'keyup,keypress,focus,blur,change'.split(',');
+	for (var i in e) el.addEventListener(e[i], resize, false);
+	resize();
+}
+resizable(document.getElementById('txt'), 10);
+/*Поиск Конец*/
+
+
+/*Смена города*/
+$(document).on('click', '.header-info-wrap-select-top-col', function (e) {
+	if (!$(this).hasClass('active')) {
+		$(document).find('.header-info-wrap-select-top-col').removeClass('active');
+		$(this).addClass('active');
+	}
+});
+/*Смена города Конец*/

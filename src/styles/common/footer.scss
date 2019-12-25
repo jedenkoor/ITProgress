@@ -1,20 +1,95 @@
 .footer{
-	
-}
-
-.choose-town{
-	max-width: 940px;
-	padding: 0;
-	&-wrapper{
-		padding: 40px;
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 1fr;
+	&-main{
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		&-wrap{
+			max-width: 1195px;
+			padding: 30px 0;
+			margin: 0 auto;
+			display: flex;
+			&-col{
+				padding-right: 80px;
+				&:nth-child(1),
+				&:nth-child(2){
+					width: 29%;
+				}
+				&:nth-child(3),
+				&:nth-child(4){
+					width: 21%;
+				}
+				&-logo{
+					margin-bottom: 30px;
+				}
+				&__text{
+					margin-bottom: 90px;
+					@include description;
+					color: var(--norilsk);
+				}
+				&-socials{
+					display: flex;
+					align-items: center;
+					a{
+						margin-right: 20px;
+						padding: 10px;
+						margin-top: -10px;
+						margin-bottom: -10px;
+						margin-left: -10px;
+						svg path{
+							transition: .3s;
+						}
+						@media screen and (min-width:1200px){
+							&:hover{
+								svg path{
+									fill: #00458B;
+								}
+							}
+						}
+					}
+				}
+				&-row{
+					display: flex;
+					@include footer-text;
+					margin-bottom: 20px;
+					color: rgba(0, 0, 0, 0.5);
+					a{
+						@include tab;
+						margin-left: 5px;
+						color: #000000;
+					}
+				}
+				&__title{
+					@include button-text;
+					margin-bottom: 30px;
+				}
+				&__link{
+					@include footer-text;
+					padding: 10px 0;
+					color: var(--norilsk);
+					&:nth-child(2){
+						margin-top: -10px;
+					}
+					@media screen and (min-width:1200px){
+						&:hover{
+							color: var(--subzero);
+						}
+					}
+				}
+			}
+		}
 	}
-	&__link {
-    padding: 10px;
-		text-align: center;
-		@include text
+	&-bot{
+		@include footer-text;
+		background: var(--norilsk);
+		color: var(--have-rights);
+		&-wrap{
+			max-width: 1195px;
+			padding: 17px 0;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&-col{
+				display: flex;
+			}
+		}
 	}
 }

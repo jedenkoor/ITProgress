@@ -17,7 +17,7 @@ body{
 .content {
 	flex: 1;
 	position: relative;
-	margin-top: 60px;
+	margin-top: 84px;
 }
 :root{
 	--norilsk: rgba(0, 0, 0, 0.75);
@@ -36,7 +36,6 @@ body{
 	font-weight: normal;
 	font-size: 48px;
 	line-height: 58px;
-	color: #000000;
 };
 @mixin big-title {
 	font-family: 'Stolzl';
@@ -44,7 +43,6 @@ body{
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 43px;
-	color: #000000;
 };
 @mixin medium-title {
 	font-family: 'Roboto';
@@ -52,15 +50,21 @@ body{
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 125%;
-	color: #000000;
 };
 @mixin small-title {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 23px;
-	color: #000000;
+	line-height: 150%;
+};
+@mixin subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
 };
 @mixin text {
 	font-family: 'Roboto';
@@ -68,7 +72,6 @@ body{
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
-	color: #000000;
 };
 @mixin button-text {
 	font-family: 'Roboto';
@@ -76,7 +79,6 @@ body{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
-	color: #000000;
 };
 @mixin link {
 	font-family: 'Roboto';
@@ -85,7 +87,6 @@ body{
 	font-size: 16px;
 	line-height: 150%;
 	text-decoration-line: underline;
-	color: var(--norilsk);
 };
 @mixin tab {
 	font-family: 'Roboto';
@@ -93,7 +94,6 @@ body{
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000000;
 };
 @mixin footer-text {
 	font-family: 'Roboto';
@@ -101,15 +101,56 @@ body{
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000000;
 };
 @mixin description {
 	font-family: 'Roboto';
 	font-style: normal;
-	font-weight: 300;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+};
+@mixin small-small-title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
 	font-size: 12px;
 	line-height: 14px;
-	color: #000000;
+	text-transform: uppercase;
+};
+@mixin text14 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 150%;
+};
+@mixin big-title24 {
+	font-family: 'Stolzl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+};
+@mixin footer-small {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+};
+@mixin tab-small {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+};
+@mixin btn-320 {
+	font-family: 'Stolzl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
 };
 
 @import 'common/adaptive';
