@@ -1,0 +1,29 @@
+.about-menu{
+	max-width: 1360px;
+	margin: 40px auto 0;
+	display: flex;
+	&__item{
+		border: 1px solid rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+		padding: 10px 30px;
+		margin-right: 20px;
+		@include tab;
+		color: rgba(0,0,0,0.25);
+		transition: .3s;
+		@media screen and (min-width:1200px){
+			&:hover{
+				color: var(--burgundi);
+				border: 1px solid var(--burgundi);
+			}
+			&:active{
+				background: var(--burgundi);
+				color: var(--have-rights);
+			}
+		}
+		&.active{
+			background: var(--burgundi);
+			color: var(--have-rights);
+			border: 1px solid var(--burgundi);
+		}
+	}
+}

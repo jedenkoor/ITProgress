@@ -159,14 +159,57 @@ body{
 	margin: 75px auto 0;
 	@include super-big-title;
 }
+.container{
+	max-width: 1360px;
+	margin: 40px auto 150px;
+}
+
+.tabsborder{
+	&-navigation{
+		display: flex;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+		margin-bottom: 20px;
+		&__item{
+			border: 1px solid rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			padding: 10px 30px;
+			margin-right: 20px;
+			@include tab;
+			color: rgba(0,0,0,0.25);
+			transition: .3s;
+			@media screen and (min-width:1200px){
+				&:hover{
+					color: var(--burgundi);
+					border: 1px solid var(--burgundi);
+				}
+				&:active{
+					background: var(--burgundi);
+					color: var(--have-rights);
+				}
+			}
+			&.active{
+				background: var(--burgundi);
+				color: var(--have-rights);
+				border: 1px solid var(--burgundi);
+			}
+		}
+	}
+}
 
 @import 'common/adaptive';
 @import 'common/fonts';
 @import 'common/header';
 @import 'common/footer';
 @import 'common/form';
+@import 'common/about-menu';
 @import 'pages/index';
 @import 'pages/catalog';
 @import 'pages/product';
 @import 'pages/contacts';
 @import 'pages/delivery';
+@import 'pages/documents';
+@import 'pages/team';
+@import 'pages/clients';
+@import 'pages/partners';
+@import 'pages/career';

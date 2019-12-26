@@ -289,13 +289,15 @@
 				}
 			}
 			&-tab{
-				display: grid;
 				display: none;
-				grid-template-columns: repeat(4, 1fr);
-				grid-template-rows: 327px;
-				grid-gap: 30px;
 				&:nth-child(2){
+					display: block;
+				}
+				&-wrap{
 					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-template-rows: 333px;
+					grid-gap: 30px;
 				}
 				&-item{
 					background: #FFFFFF;

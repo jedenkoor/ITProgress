@@ -1,6 +1,4 @@
 .catalog{
-	max-width: 1360px;
-	margin: 0 auto;
 	&-sort{
 		display: flex;
 		align-items: center;
@@ -43,7 +41,6 @@
 	}
 	&-items{
 		margin-top: 40px;
-		margin-bottom: 140px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

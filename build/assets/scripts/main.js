@@ -52,3 +52,15 @@ $(document).on('click', '.header-info-wrap-select-top-col', function (e) {
 	}
 });
 /*Смена города Конец*/
+
+
+/*Табы*/
+$(document).on('click', '.tabs-navigation-item', function (e) {
+	e.preventDefault();
+	let tabContainers = $(this).closest('.tabs').find('.tabs-tab');
+	tabContainers.hide();
+	tabContainers.filter(this.hash).show();
+	$(this).closest('.tabs').find('.tabs-navigation-item').removeClass('active');
+	$(this).addClass('active');
+});
+/*Табы Конец*/

@@ -1,0 +1,10 @@
+extends ../template
+
+block variables
+	- var title = 'Наши клиенты'
+	- var currentUrl = '/clients'
+
+block content
+	h1.title Наши клиенты
+	include ../common/about-menu.pug
+	.clients.container

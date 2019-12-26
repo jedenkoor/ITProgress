@@ -1,0 +1,20 @@
+extends ../template
+
+block variables
+	- var title = 'Документы'
+	- var currentUrl = '/documents'
+
+block content
+	h1.title Документы
+	include ../common/about-menu.pug
+	.documents.container
+		-for(var i = 0; i < 5; i++)
+			.documents-item
+				.documents-item-wrap
+					.documents-item-img
+						img(src="assets/images/document1.svg", alt="")
+					.documents-item__title Общие документы интернет-магазина
+					a.documents-item__link(href="#" download) Лицензионный договор-оферта
+					a.documents-item__link(href="#" download) Реквизиты
+					a.documents-item__link(href="#" download) Согласие на обработку персональных данных
+					a.documents-item__link(href="#" download) Соглашение-оферта об удалённом сопровождении 1С

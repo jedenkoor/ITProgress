@@ -1,0 +1,19 @@
+extends ../template
+
+block variables
+	- var title = 'Наша команда'
+	- var currentUrl = '/team'
+
+block content
+	h1.title Наша команда
+	include ../common/about-menu.pug
+	.team.container
+		.team__text Предоставим Вам развернутую консультацию по программным продуктам, предложим и реализуем оптимальный вариант автоматизации Вашего бизнеса.
+		.team-items
+			-for(var i = 0; i < 5; i++)
+				.team-items-item
+					.team-items-item-img
+						img(src="assets/images/team-item.png", alt="")
+					.team-items-item__title Евгений
+					.team-items-item__text Менеджер по работе с корпоративными клиентами
+				

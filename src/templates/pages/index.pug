@@ -55,64 +55,67 @@ block content
 		.main-ways
 			.main-ways__subtitle Услуги
 			.main-ways__title Направление работы нашей компании
-			.main-ways-tabs
+			.main-ways-tabs.tabs
 				.main-ways-tabs-navigation
-					a.main-ways-tabs-navigation__item.active(href="#tab1") Сопровождение 1С
-					a.main-ways-tabs-navigation__item(href="#tab2") Сервисы 1С
-					a.main-ways-tabs-navigation__item(href="#tab3") Лицензии
-				.main-ways-tabs-tab(id="tab1")
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way1.svg", alt="")
-						.main-ways-tabs-tab-item__title Регламентированный учет
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Бухгалтерия 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Зарплата и управление персоналом 8
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way2.svg", alt="")
-						.main-ways-tabs-tab-item__title Торговый и складской учет 
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Управление торговлей 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. CRM
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Розница 8
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way3.svg", alt="")
-						.main-ways-tabs-tab-item__title Управленческий учет
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
-					.main-ways-tabs-tab-item
-						a.main-ways-tabs-tab-item-more(href="#")
-							.main-ways-tabs-tab-item-more__circle
-							.main-ways-tabs-tab-item-more__text Все направления
-				.main-ways-tabs-tab(id="tab2")
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way2.svg", alt="")
-						.main-ways-tabs-tab-item__title Торговый и складской учет 
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Управление торговлей 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. CRM
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Розница 8
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way3.svg", alt="")
-						.main-ways-tabs-tab-item__title Управленческий учет
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
-					.main-ways-tabs-tab-item
-						a.main-ways-tabs-tab-item-more(href="#")
-							.main-ways-tabs-tab-item-more__circle
-							.main-ways-tabs-tab-item-more__text Все направления
-				.main-ways-tabs-tab(id="tab3")
-					.main-ways-tabs-tab-item
-						img(src="assets/images/main-way3.svg", alt="")
-						.main-ways-tabs-tab-item__title Управленческий учет
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
-						a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
-					.main-ways-tabs-tab-item
-						a.main-ways-tabs-tab-item-more(href="#")
-							.main-ways-tabs-tab-item-more__circle
-							.main-ways-tabs-tab-item-more__text Все направления
+					a.main-ways-tabs-navigation__item.tabs-navigation-item.active(href="#tab1") Сопровождение 1С
+					a.main-ways-tabs-navigation__item.tabs-navigation-item(href="#tab2") Сервисы 1С
+					a.main-ways-tabs-navigation__item.tabs-navigation-item(href="#tab3") Лицензии
+				.main-ways-tabs-tab.tabs-tab(id="tab1")
+					.main-ways-tabs-tab-wrap
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way1.svg", alt="")
+							.main-ways-tabs-tab-item__title Регламентированный учет
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Бухгалтерия 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Зарплата и управление персоналом 8
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way2.svg", alt="")
+							.main-ways-tabs-tab-item__title Торговый и складской учет 
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Управление торговлей 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. CRM
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Розница 8
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way3.svg", alt="")
+							.main-ways-tabs-tab-item__title Управленческий учет
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
+						.main-ways-tabs-tab-item
+							a.main-ways-tabs-tab-item-more(href="#")
+								.main-ways-tabs-tab-item-more__circle
+								.main-ways-tabs-tab-item-more__text Все направления
+				.main-ways-tabs-tab.tabs-tab(id="tab2")
+					.main-ways-tabs-tab-wrap
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way2.svg", alt="")
+							.main-ways-tabs-tab-item__title Торговый и складской учет 
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Управление торговлей 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. CRM
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Розница 8
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way3.svg", alt="")
+							.main-ways-tabs-tab-item__title Управленческий учет
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
+						.main-ways-tabs-tab-item
+							a.main-ways-tabs-tab-item-more(href="#")
+								.main-ways-tabs-tab-item-more__circle
+								.main-ways-tabs-tab-item-more__text Все направления
+				.main-ways-tabs-tab.tabs-tab(id="tab3")
+					.main-ways-tabs-tab-wrap
+						.main-ways-tabs-tab-item
+							img(src="assets/images/main-way3.svg", alt="")
+							.main-ways-tabs-tab-item__title Управленческий учет
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Управление нашей фирмой 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Документооборот 8
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Предприятие 8. Управляющий
+							a.main-ways-tabs-tab-item__link(href="#") 1С:Договорчики 8
+						.main-ways-tabs-tab-item
+							a.main-ways-tabs-tab-item-more(href="#")
+								.main-ways-tabs-tab-item-more__circle
+								.main-ways-tabs-tab-item-more__text Все направления
 
 		.main-clients
 			.main-clients__subtitle Клиенты
