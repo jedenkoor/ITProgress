@@ -1,0 +1,13 @@
+.clients{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 60px;
+	&-item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			max-width: 100%;
+		}
+	}
+}

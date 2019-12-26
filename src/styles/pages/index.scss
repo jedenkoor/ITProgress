@@ -143,6 +143,7 @@
 					height: 10px;
 					background: url('../images/arrow.svg') center no-repeat;
 					margin-left: 25px;
+					margin-top: 2px;
 				}
 				@media screen and (min-width:1200px){
 					&:hover{
@@ -296,7 +297,7 @@
 				&-wrap{
 					display: grid;
 					grid-template-columns: repeat(4, 1fr);
-					grid-template-rows: 333px;
+					grid-template-rows: 312px;
 					grid-gap: 30px;
 				}
 				&-item{
@@ -305,6 +306,10 @@
 					border-radius: 10px;
 					padding: 20px;
 					overflow: hidden;
+					&-wrap{
+						height: 100%;
+						overflow: hidden;
+					}
 					&:last-child{
 						box-shadow: none;
 						display: flex;
@@ -381,6 +386,9 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				img{
+					max-width: 100%;
+				}
 			}
 		}
 	}

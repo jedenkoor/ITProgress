@@ -2,6 +2,9 @@
 if (document.title == 'Главная') {
 	$(document).find('.breadcrumbs').hide();
 }
+if (document.title == 'Карта сайта') {
+	$(document).find('.breadcrumbs, .header, .footer').hide();
+}
 /*Def скрипты Конец*/
 
 
@@ -26,21 +29,41 @@ $(document).on('scroll', function (e) {
 /*Поиск*/
 $(document).on('click', '.header-search', function (e) {
 	$(document).find('.header-searchform').toggleClass('active');
+	if ($(document).find('.header-searchform').hasClass('active')) {
+		$(document).find('.header').css('height', 'auto');
+	} else {
+		$(document).find('.header').css('height', '84px');
+		$(document).find('.header-searchform__input').val('').addClass('empty');
+		$(document).find('.header-searchform form svg').show();
+	}
 });
 $(document).on('click touchend', function (e) {
 	var div = $('.header-searchform');
 	if (div.hasClass('active') && !div.is(e.target) && div.has(e.target).length === 0 && !$('.header-search').is(e.target) && $('.header-search').has(e.target).length === 0) {
 		div.removeClass('active');
+		$(document).find('.header').css('height', '84px');
+		$(document).find('.header-searchform__input').val('').addClass('empty');
+		$(document).find('.header-searchform form svg').show();
 	}
 });
 function resizable(el, factor) {
 	var int = Number(factor) || 7.7;
 	function resize() { el.style.width = ((el.value.length + 1) * int) + 'px' }
-	var e = 'keyup,keypress,focus,blur,change'.split(',');
+	var e = 'keyup,keypress,focus,blur,change,input'.split(',');
 	for (var i in e) el.addEventListener(e[i], resize, false);
 	resize();
 }
-resizable(document.getElementById('txt'), 10);
+resizable(document.getElementById('txt'), 12);
+$(document).on('input', '.header-searchform__input', function (e) {
+	if ($(this).val() != '') {
+		$(this).removeClass('empty');
+		$(this).siblings('svg').hide();
+	} else {
+		$(this).addClass('empty');
+		$(this).siblings('svg').show();
+	}
+});
+
 /*Поиск Конец*/
 
 

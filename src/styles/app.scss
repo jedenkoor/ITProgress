@@ -154,13 +154,16 @@ body{
 };
 .title{
 	padding-bottom: 40px;
-	border-bottom  : 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 	max-width: 1360px;
+	width: 100%;
 	margin: 75px auto 0;
 	@include super-big-title;
 }
 .container{
-	max-width: 1360px;
+	max-width: 1400px;
+	width: 100%;
+	padding: 0 20px;	
 	margin: 40px auto 150px;
 }
 
@@ -203,6 +206,7 @@ body{
 @import 'common/footer';
 @import 'common/form';
 @import 'common/about-menu';
+@import 'pages/map';
 @import 'pages/index';
 @import 'pages/catalog';
 @import 'pages/product';
@@ -213,3 +217,4 @@ body{
 @import 'pages/clients';
 @import 'pages/partners';
 @import 'pages/career';
+@import 'pages/vacancy';
