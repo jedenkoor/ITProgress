@@ -281,7 +281,8 @@
 
 .breadcrumbs{
 	position: absolute;
-	top: 110px;
+	z-index: 2;
+	top: 105px;
 	display: flex;
 	align-items: center;
 	max-width: 1360px;

@@ -27,6 +27,17 @@
 				border-radius: 5px;
 				margin-right: 20px;
 				cursor: pointer;
+				transition: .3s;
+				@media screen and (min-width:1200px){
+					&:hover{
+						color: var(--burgundi);
+						border: 1px solid var(--burgundi);
+					}
+					&:active{
+						background: var(--burgundi);
+						color: var(--have-rights);
+					}
+				}
 			}
 		}
 	}
