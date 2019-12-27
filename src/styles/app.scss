@@ -86,7 +86,7 @@ body{
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
-	text-decoration-line: underline;
+	text-decoration: underline;
 };
 @mixin tab {
 	font-family: 'Roboto';
@@ -151,6 +151,21 @@ body{
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
+};
+@mixin link14 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 150%;
+	text-decoration: underline;
+};
+@mixin small-title18 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
 };
 .title{
 	padding-bottom: 40px;
@@ -219,3 +234,10 @@ body{
 @import 'pages/career';
 @import 'pages/vacancy';
 @import 'pages/search';
+
+
+@include w480{
+	.content{
+		margin-top: 65px;
+	}
+}

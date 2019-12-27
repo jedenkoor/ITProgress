@@ -32,11 +32,13 @@
 			margin-right: 60px;
 		}
 		&-wrap{
-			background: rgba(0, 69, 139, 0.1);
-			padding: 20px 30px;
 			margin-top: -1px;
 			position: relative;
 			cursor: pointer;
+			&-content{
+				background: rgba(0, 69, 139, 0.1);
+				padding: 20px 30px;
+			}
 			&__tel{
 				@include button-text;
 				color: var(--norilsk);
@@ -243,6 +245,12 @@
 		cursor: pointer;
 		display: flex;
 	}
+	&-burger{
+		display: none;
+	}
+	&-mobile-menu{
+		display: none;
+	}
 	&-searchform{
 		width: 100%;
 		position: relative;
@@ -327,5 +335,131 @@
 	}
 	span{
 		color: var(--subzero)
+	}
+}
+
+@include w1366{
+	.header{
+		&-wrap{
+			position: relative;
+		}
+		&-info{
+			&-logo{
+				margin-right: 40px;
+			}
+			&-wrap{
+				position: static;
+				@media screen and (min-width: 1200px){
+					&:hover .header-info-wrap-select{
+						transform: translateY(-100%);
+					}
+					&:hover .header-info-wrap__place:after{
+						transform: rotate(-45deg);
+						margin-top: -5px;
+					}
+				}
+				&.active{
+					.header-info-wrap__place:after{
+						transform: rotate(-225deg);
+						margin-top: 0px;
+					}
+				}
+				&-select{
+					width: 100%;
+					left: 0;
+					display: flex;
+					padding: 40px 20px 20px;
+					cursor: default;
+					&.active{
+						transform: translateY(0)!important;
+					}
+					&-col{
+						width: 50%;
+						&__link{
+							@include small-title;
+							color: var(--norilsk);	
+							padding: 10px 0;
+							&:first-child{
+								margin-top: -10px;
+							}
+							&:last-child{
+								margin-bottom: -10px;
+							}	
+						}
+					}
+					&-top{
+						flex-direction: column;
+						&-col{
+							padding: 0;
+							margin-bottom: 35px;
+							width: 100%;
+						}
+					}
+					&-bot{
+						padding: 0;
+						border: none;
+					}
+				}
+			}
+		}
+		&-menu{
+			display: none;
+		}
+		&-search{
+			margin-left: auto;
+		}
+		&-burger{
+			padding: 30px 20px;
+			margin-right: -20px;
+			cursor: pointer;
+			display: flex;
+			margin-left: 20px;
+			svg{
+				height: 15px;
+				path{
+					transition: .3s;
+				}
+			}
+			&.active{
+				svg{
+					path:first-child{
+						transform: translate(13px, 11px) rotate(-45deg);
+					}
+					path:last-child{
+						transform: translate(10px, -21px) rotate(45deg);
+					}
+				}
+			}
+		}
+		&-mobile-menu{
+			display: block;
+		}
+	}
+}
+
+@include w480{
+	.header{
+		height: 65px;
+		&-wrap{
+			height: 65px;
+			&-container{
+				padding: 13px 20px;
+				height: 65px;
+			}
+		}
+		&-info{
+			&-wrap{
+				&-content{
+					display: none;
+				}
+			}
+		}
+		&-search{
+			padding: 22px 20px;
+		}
+		&-burger{
+			padding: 25px 20px;
+			margin-left: 10px;
+		}
 	}
 }

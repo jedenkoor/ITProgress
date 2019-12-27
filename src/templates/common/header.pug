@@ -5,21 +5,30 @@ header.header.visible
 				a.header-info-logo(href="index.html")
 					img(src="assets/images/logo.png", alt="")
 				.header-info-wrap
-					a.header-info-wrap__tel(href="tel:88126600808") 8 (812) 660-08-08
-					.header-info-wrap__place Санкт-Петербург
+					.header-info-wrap-content
+						a.header-info-wrap__tel(href="tel:88126600808") 8 (812) 660-08-08
+						.header-info-wrap__place Санкт-Петербург
 					.header-info-wrap-select
-						.header-info-wrap-select-top
-							.header-info-wrap-select-top-col.active
-								.header-info-wrap-select-top-col__city Санкт-Петербург
-								a.header-info-wrap-select-top-col__tel(href="tel:88126600808") 8 (812) 660-08-08
-							.header-info-wrap-select-top-col
-								.header-info-wrap-select-top-col__city Москва
-								a.header-info-wrap-select-top-col__tel(href="tel:84996488688") 8 (499) 648-86-88
-						.header-info-wrap-select-bot
-							.header-info-wrap-select-bot-row Работаем в пн-пт с 9.00 до 18.00 по всей России
-							.header-info-wrap-select-bot-row
-								a(href="tel:88005051503") 8 (800) 505-15-03
-								a(href="mailto:info@itprogress.ru") info@itprogress.ru
+						.header-info-wrap-select-col.header-mobile-menu
+							a.header-info-wrap-select-col__link(href="catalog.html") Сопровождение 1С
+							a.header-info-wrap-select-col__link(href="catalog.html") Сервисы 1С
+							a.header-info-wrap-select-col__link(href="catalog.html") Лицензии
+							a.header-info-wrap-select-col__link(href="delivery.html") Оплата и доставка
+							a.header-info-wrap-select-col__link(href="documents.html") О компании
+							a.header-info-wrap-select-col__link(href="contacts.html") Контакты
+						.header-info-wrap-select-col
+							.header-info-wrap-select-top
+								.header-info-wrap-select-top-col.active
+									.header-info-wrap-select-top-col__city Санкт-Петербург
+									a.header-info-wrap-select-top-col__tel(href="tel:88126600808") 8 (812) 660-08-08
+								.header-info-wrap-select-top-col
+									.header-info-wrap-select-top-col__city Москва
+									a.header-info-wrap-select-top-col__tel(href="tel:84996488688") 8 (499) 648-86-88
+							.header-info-wrap-select-bot
+								.header-info-wrap-select-bot-row Работаем в пн-пт с 9.00 до 18.00 по всей России
+								.header-info-wrap-select-bot-row
+									a(href="tel:88005051503") 8 (800) 505-15-03
+									a(href="mailto:info@itprogress.ru") info@itprogress.ru
 			.header-menu
 				.header-menu-item.list-item
 					a.header-menu-item__link(href="catalog.html") Сопровождение 1С
@@ -61,6 +70,11 @@ header.header.visible
 			.header-search
 				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M15.7832 14.3911L20 18.6069L18.6069 20L14.3911 15.7832C12.8224 17.0407 10.8713 17.7246 8.86088 17.7218C3.96968 17.7218 0 13.7521 0 8.86088C0 3.96968 3.96968 0 8.86088 0C13.7521 0 17.7218 3.96968 17.7218 8.86088C17.7246 10.8713 17.0407 12.8224 15.7832 14.3911ZM13.8082 13.6605C15.0577 12.3756 15.7555 10.6532 15.7527 8.86088C15.7527 5.05267 12.6681 1.96909 8.86088 1.96909C5.05267 1.96909 1.96909 5.05267 1.96909 8.86088C1.96909 12.6681 5.05267 15.7527 8.86088 15.7527C10.6532 15.7555 12.3756 15.0577 13.6605 13.8082L13.8082 13.6605Z" fill="#00458B"/>
+				</svg>
+			.header-burger
+				<svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 1H35" stroke="#00458B" stroke-width="2"/>
+					<path d="M13 11H35" stroke="#00458B" stroke-width="2"/>
 				</svg>
 	.header-searchform
 		form(action="#")

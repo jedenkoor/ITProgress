@@ -77,6 +77,26 @@ $(document).on('click', '.header-info-wrap-select-top-col', function (e) {
 /*Смена города Конец*/
 
 
+/*Мобильное меню*/
+
+$(document).on('click', '.header-info-wrap, .header-burger', function (e) {
+	if (!$('.header-info-wrap__tel').is(e.target) && !$('.header-info-wrap-select').is(e.target) && $('.header-info-wrap-select').has(e.target).length === 0) {
+		$(document).find('.header-info-wrap-select').toggleClass('active');
+		$(document).find('.header-info-wrap, .header-burger').toggleClass('active');
+	} else {
+		return
+	}
+});
+$(document).on('click touchend', function (e) {
+	var div = $('.header-info-wrap-select');
+	if (div.hasClass('active') && !div.is(e.target) && div.has(e.target).length === 0 && !$('.header-info-wrap').is(e.target) && $('.header-info-wrap').has(e.target).length === 0 && !$('.header-burger').is(e.target) && $('.header-burger').has(e.target).length === 0) {
+		div.removeClass('active');
+		$(document).find('.header-burger, .header-info-wrap').removeClass('active');
+	}
+});
+/*Мобильное меню Конец*/
+
+
 /*Табы*/
 $(document).on('click', '.tabs-navigation-item', function (e) {
 	e.preventDefault();

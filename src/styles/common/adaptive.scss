@@ -24,7 +24,7 @@
 	}
 };
 @mixin w320 {
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: 360px){
 		@content
 	}
 };
