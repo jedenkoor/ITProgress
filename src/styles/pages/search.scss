@@ -1,0 +1,23 @@
+.search{
+	&-item{
+		background: #FFFFFF;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		padding: 20px;
+		margin-bottom: 30px;
+		&__category{
+			@include text;
+			color: var(--gray-cardinal);
+			margin-bottom: 10px;
+		}
+		&__title{
+			@include medium-title;
+			color: var(--norilsk);
+			margin-bottom: 10px;
+		}
+		&__text{
+			@include text;
+			color: var(--norilsk);
+		}
+	}
+}
