@@ -461,5 +461,26 @@
 			padding: 25px 20px;
 			margin-left: 10px;
 		}
+		&-searchform{
+			label{
+				padding: 17px 20px;
+			}
+			&__input{
+				min-width: 140px !important;
+				@include text;
+			}
+			&-list{
+				&-item{
+					flex-direction: column-reverse;
+					align-items: flex-start;
+					&__title{
+						@include small-title18;
+					}
+					&__text{
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
 	}
 }
