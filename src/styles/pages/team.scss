@@ -8,8 +8,6 @@
 	&-items{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 387px;
-		grid-auto-rows: 387px;
 		grid-gap: 40px 30px;
 		&-item{
 			background: #FFFFFF;
@@ -38,6 +36,67 @@
 				color: var(--norilsk);
 				text-align: center;
 			}
+		}
+	}
+	&__more{
+		display: none;
+	}
+}
+
+@include w1024{
+	.team{
+		&-items{
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			&-item{
+				padding: 20px;
+				&-img{
+					max-width: 100%;
+					height: auto;
+					margin-bottom: 30px;
+				}
+				&__title{
+					@include small-title18;
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.team{
+		&__text{
+			@include text14;
+			margin-top: 40px;
+		}
+		&-items{
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: 280px;
+			grid-auto-rows: 280px;
+			max-height: 890px;
+			overflow: hidden;
+			&-item{
+				&-img{
+					width: 148px;
+				}
+				&__text{
+					@include text14;
+				}
+			}
+		}
+		&__more{
+			display: flex;
+			margin: 30px auto 0;
+			width: 160px;
+			height: 35px;
+			justify-content: center;
+			align-items: center;
+			background: #FFFFFF;
+			border: 1px solid rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			color: rgba(0, 0, 0, 0.25);
+			@include text14;
+			cursor: pointer;
 		}
 	}
 }

@@ -198,3 +198,209 @@
 		}
 	}
 }
+
+@include w1366{
+	.product{
+		&-top{
+			&-info{
+				&-btns{
+					flex-wrap: wrap;
+					&-col{
+						width: 45%;
+						&:nth-child(2){
+							border-right: none;
+						}
+						&:last-child{
+							width: 100%;
+							padding: 0;
+							margin-top: 40px;
+						}
+					}
+				}
+			}
+		}
+		&-main{
+			flex-direction: column-reverse;
+			align-items: stretch;
+			&-col{
+				&:last-child{
+					flex: 0 0 100%;
+					margin-left: 0;
+					margin-bottom: 30px;
+				}
+				.product-main-col-moreinfo{
+					display: flex;
+					flex-wrap: wrap;
+					&__title{
+						width: 100%;
+						margin-bottom: 15px;
+					}
+					&-list{
+						flex: 1;
+						display: flex;
+						flex-wrap: wrap;
+						border-right: 1px solid rgba(0, 0, 0, 0.15);
+						li{
+							width: 50%;
+							margin-bottom: 20px;
+							&:nth-last-child(1),
+							&:nth-last-child(2){
+								margin-bottom: 0;
+							}
+						}
+					}
+					&__bot{
+						width: 140px;
+						margin-left: 60px;
+						margin-top: 0;
+						padding-top: 0;
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w1024{
+	.product{
+		&-top{
+			padding: 20px;
+			margin-bottom: 20px;
+			&-img{
+				flex: 0 0 127px;
+				margin-right: 40px;
+			}
+			&-info{
+				&__title{
+					@include medium-title;
+				}
+				&__text{
+					margin-bottom: 20px;
+					color: var(--norilsk);
+				}
+				&-btns{
+					padding-top: 20px;
+					&-col{
+						padding: 0 20px;
+						&__buy,
+						&__rent,
+						&__demo{
+							height: 40px;
+						}
+						&__buy{
+							flex: 0 0 114px;
+						}
+						&__rent{
+							flex: 0 0 135px;
+						}
+						&__price{
+							@include small-title;
+							white-space: nowrap;
+						}
+						&:last-child{
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+		&-main{
+			&-col{
+				&:last-child{
+					margin-bottom: 20px;
+				}
+				&-moreinfo{
+					&__title{
+						@include button-text;
+					}
+				}
+				&-tab{
+					padding-top: 20px;
+					&__title{
+						@include medium-title;
+						margin-bottom: 20px;
+					}
+					&__subtitle{
+						@include button-text;
+						margin-top: 40px;
+					}
+					p{
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.product{
+		&-top{
+			flex-direction: column;
+			padding: 20px 10px;
+			&-img{
+				margin-right: 0;
+				align-self: center;
+				margin-bottom: 20px;
+			}
+			&-info{
+				&__text{
+					@include text14;
+				}
+				&-btns{
+					padding-top: 0;
+					&-col{
+						width: 100%;
+						padding: 20px 0;
+						border-right: none;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+						&:last-child{
+							margin-top: 0;
+							border-bottom: none;
+							padding-top: 20px;
+						}
+						&__buy,
+						&__rent,
+						&__demo{
+							flex: 0 0 133px;
+							@include tab;
+						}
+						&__demo{
+							flex: 0 0 184px;
+						}
+						&__rentprice span:first-child,
+						&__demoprice{
+							@include tab;
+						}
+					}
+				}
+			}
+		}
+		&-main{
+			&-col{
+				padding: 20px 10px;
+				&-moreinfo{
+					display: block;
+					&-list{
+						display: block;
+						border: none;
+						li{
+							width: 100%;
+							&:nth-last-child(1),
+							&:nth-last-child(2){
+								margin-bottom: 20px;
+							}
+						}
+					}
+					&__bot{
+						margin-left: 0;
+						padding-top: 20px;
+						border-top: 1px solid rgba(0, 0, 0, 0.15);
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

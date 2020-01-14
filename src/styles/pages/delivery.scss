@@ -20,7 +20,7 @@
 			}
 			p{
 				@include text;
-				color: var(--medium-gray);
+				color: var(--norilsk);
 				margin-bottom: 20px;
 				&:last-child{
 					margin-bottom: 0;
@@ -46,6 +46,11 @@
 				margin-bottom: 40px;
 				&:last-child{
 					margin-bottom: 0;
+					svg{
+						margin-bottom: 20px;
+						margin-top: 20px;
+						width: 100%;
+					}
 				}
 				&-tab{
 					display: none;
@@ -70,6 +75,113 @@
 						&:last-child{
 							@include text;
 							flex: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w1024{
+	.delivery{
+		&-top{
+			margin-bottom: 20px;
+			&-tab{
+				padding-top: 20px;
+				&__title{
+					@include big-title24;
+				}
+				&__subtitle{
+					@include small-title18;
+				}
+				p{
+					@include text14;
+				}
+			}
+		}
+		&-main{
+			flex-direction: column-reverse;
+			&-col{
+				&:last-child{
+					margin-left: 0;
+					margin-bottom: 20px;
+				}
+				&-shadow{
+					margin-bottom: 20px;
+					&-tab{
+						padding-top: 20px;
+					}
+					&__title{
+						@include big-title24;
+					}
+					&-row{
+						span{
+							&:first-child{
+								@include small-title18;
+							}
+							&:last-child{
+								@include text14;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.delivery{
+		&-top{
+			padding: 20px 10px;
+			&-navigation.tabsborder-navigation{
+				flex-direction: column;
+				padding-left: 0;
+				margin-left: 0;
+				width: auto;
+				&:after{
+					display: none;
+				}
+				.delivery-top-navigation__item{
+					width: 100%;
+					text-align: center;
+					margin-right: 0;
+					&:first-child{
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+		&-main{
+			&-col{
+				.product-main-col-moreinfo-list li:nth-last-child(1), 
+				.product-main-col-moreinfo-list li:nth-last-child(2){
+					margin-bottom: 0;
+				}
+				&-shadow{
+					padding: 20px 10px;
+					&-navigation.tabsborder-navigation{
+						overflow: visible;
+						justify-content: space-between;
+						padding-left: 0;
+						margin-left: 0;
+						width: auto;
+						.tabsborder-navigation__item{
+							width: calc(50% - 10px);
+							text-align: center;
+						}
+					}
+					&-row{
+						flex-direction: column;
+						margin-bottom: 0;
+						span{
+							&:first-child{
+								margin-bottom: 5px;
+							}
+							&:last-child{
+								margin-bottom: 20px;
+							}
 						}
 					}
 				}

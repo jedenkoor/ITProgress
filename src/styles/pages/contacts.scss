@@ -85,3 +85,71 @@
 		}
 	}
 }
+
+@include w1024{
+	.contacts{
+		flex-direction: column-reverse;
+		&-info{
+			margin-right: 0;
+			&-row{
+				display: flex;
+				flex-wrap: wrap;
+				&__title{
+					width: 100%;
+					max-width: none;
+					margin-bottom: 30px;
+				}
+				&__link{
+					margin-right: 30px;
+				}
+				&__address{
+					order: 2;
+					max-width: none;
+					margin-top: 2px;
+				}
+			}
+		}
+		&-map{
+			margin-bottom: 40px;
+			height: 474px;
+			flex: auto;
+		}
+	}
+}
+
+@include w480{
+	.contacts{
+		&-map{
+			margin-bottom: 20px;
+			img{
+				display: none;
+			}
+			&__overlay{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 18px;
+			}
+		}
+		&-info{
+			padding: 20px 10px;
+			&-row{
+				&:first-child{
+					.contacts-info-row__title{
+						@include text14;
+					}
+				}
+				&__address{
+					order: initial;
+					@include link14;
+				}
+			}
+		}
+	}
+}

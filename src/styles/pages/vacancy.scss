@@ -48,3 +48,30 @@
 		}
 	}
 }
+
+@include w1024{
+	.vacancy{
+		&-main{
+			flex-direction: column-reverse;
+			&-col{
+				&:last-child{
+					margin-left: 0;
+					margin-bottom: 20px; 
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.vacancy{
+		&-main{
+			&-col{
+				padding: 20px 10px;
+				&__subtitle{
+					@include button-text;
+				}
+			}
+		}
+	}
+}

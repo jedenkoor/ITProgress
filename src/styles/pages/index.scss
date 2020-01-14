@@ -623,6 +623,11 @@
 					height: 50px;
 					width: calc(100% - 40px);
 				}
+				&-item{
+					span{
+						@include tab-small;
+					}
+				}
 				&-item:nth-child(2n){
 					transform: translateY(-20px);
 				}
@@ -675,6 +680,11 @@
 	.main{
 		&-services{
 			padding: 80px 10px 170px;
+			&-col{
+				&__btn{
+					width: calc(100% - 20px);
+				}
+			}
 		}
 		&-about{
 			&-wrap{
