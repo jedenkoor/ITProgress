@@ -345,6 +345,20 @@ body{
 			}
 		}
 	}
+	.slider{
+		opacity: 1;
+		.slick-prev,
+		.slick-next{
+			width: 25px;
+    	height: 25px;
+		}
+		.slick-prev:before{
+			margin-left: 10px;
+		}
+		.slick-next:before{
+			margin-left: 6px;
+		}
+	}
 }
 
 @include w320{
