@@ -206,25 +206,25 @@ if (document.documentElement.clientWidth > 767) {
 			}
 		]
 	});
+} else {
+	$(document).find('.gallery-items.slider').slick({
+		slidesToShow: 4,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
 }
-
-$(document).find('.gallery-items.slider').slick({
-	slidesToShow: 4,
-	responsive: [
-		{
-			breakpoint: 1025,
-			settings: {
-				slidesToShow: 3
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1
-			}
-		}
-	]
-});
 /*Слайдер 4 элемента Конец*/
 
 
