@@ -320,3 +320,14 @@ function getChar(event) {
 	return null; // специальная клавиша
 }
 /*Ограничения ввода в поле на странице товара конец*/
+
+
+/*Прокрутка Меню при загрузке до активного пункта*/
+let horizontalElem = document.getElementById("horizontalMenu"),
+	activeElem = document.querySelector('#horizontalMenu .about-menu__item.active'),
+	windowWidth = document.documentElement.clientWidth,
+	activeElementWidth = activeElem.offsetWidth;
+
+horizontalElem.scrollLeft += activeElem.offsetLeft - (windowWidth / 2) + (activeElementWidth / 2);
+
+/*Прокрутка Меню при загрузке до активного пункта Конец*/
