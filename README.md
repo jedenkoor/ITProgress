@@ -1,2 +1,2 @@
-# https://jedenkoor.github.io/ITProgress/build/index.html
+# https://jedenkoor.github.io/ITProgress/build/map.html
  
