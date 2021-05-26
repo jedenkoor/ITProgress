@@ -7,14 +7,15 @@ block variables
 block content
 	h1.title Документы
 	include ../common/about-menu.pug
-	.documents.container
-		-for(var i = 0; i < 5; i++)
-			.documents-item
-				.documents-item-wrap
-					.documents-item-img
-						img(src="assets/images/document1.svg", alt="")
-					.documents-item__title Общие документы интернет-магазина
-					a.documents-item__link(href="#" download) Лицензионный договор-оферта
-					a.documents-item__link(href="#" download) Реквизиты
-					a.documents-item__link(href="#" download) Согласие на обработку персональных данных
-					a.documents-item__link(href="#" download) Соглашение-оферта об удалённом сопровождении 1С
+	.container
+		ul.documents
+			-for(var i = 0; i < 5; i++)
+				li.documents-item
+					.documents-item-wrap
+						.documents-item-img
+							img(src="assets/images/document1.svg" alt="")
+						h2.documents-item__title Общие документы интернет-магазина
+						a.documents-item__link(href="#" download) Лицензионный договор-оферта
+						a.documents-item__link(href="#" download) Реквизиты
+						a.documents-item__link(href="#" download) Согласие на обработку персональных данных
+						a.documents-item__link(href="#" download) Соглашение-оферта об удалённом сопровождении 1С

@@ -8,34 +8,34 @@ block content
 	.delivery.container
 		.delivery-top.tabsborder.tabs
 			.delivery-top-navigation.tabsborder-navigation
-				a.delivery-top-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(href="#pay-ur") Юридическим лицам
-				a.delivery-top-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#pay-fiz") Физическим лицам
+				button.delivery-top-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(data-tab="#pay-ur") Юридическим лицам
+				button.delivery-top-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#pay-fiz") Физическим лицам
 			.delivery-top-tab.tabs-tab(id="pay-ur")
-				.delivery-top-tab__title Оплата
-				.delivery-top-tab__subtitle По безналичному расчёту
+				h2.delivery-top-tab__title Оплата
+				h3.delivery-top-tab__subtitle По безналичному расчёту
 				p • При отгрузке товара Вам предоставляются товарная накладная или акт на передачу прав и счёт-фактура.
 				.delivery-top-tab__subtitle За наличный расчёт
 				p • При отгрузке товара Вам предоставляются товарная накладная или акт на передачу прав, счёт-фактура, квитанция и кассовый чек. Оплата осуществляется у нас в офисе или при доставке курьером, при себе нужно иметь паспорт и доверенность или печать.
 			.delivery-top-tab.tabs-tab(id="pay-fiz")
-				.delivery-top-tab__title Оплата
-				.delivery-top-tab__subtitle Электронным платежом
+				h2.delivery-top-tab__title Оплата
+				h3.delivery-top-tab__subtitle Электронным платежом
 				p • Вы можете оплатить продукты электронным платежом при оформлении заказа через корзину. Прием электронных платежей осуществляется через ROBOKASSA. Доступны следующие электронные валюты: Webmoney, Яндекс.Деньги, Moneymail RUR, RBK Money RUR, EasyPay, Единый кошелек, LiqPay, WebCreds, Z-Payment.
 		.delivery-main
 			.delivery-main-col
 				.delivery-main-col-shadow.tabsborder.tabs
 					.delivery-main-col-shadow-navigation.tabsborder-navigation
-						a.delivery-main-col-shadow-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(href="#tab1") Самовывоз
-						a.delivery-main-col-shadow-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#tab2") Курьером
+						button.delivery-main-col-shadow-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(data-tab="#tab1") Самовывоз
+						button.delivery-main-col-shadow-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#tab2") Курьером
 					.delivery-main-col-shadow-tab.delivery-top-tab.tabs-tab(id="tab1")
-						.delivery-top-tab__title Доставка
-						.delivery-top-tab__subtitle По Санкт-Петербургу
+						h2.delivery-top-tab__title Доставка
+						h3.delivery-top-tab__subtitle По Санкт-Петербургу
 						p • Вы можете самостоятельно забрать свой заказ из нашего офиса по адресу: м. Елизаровская, пр. Обуховской обороны, д. 76, корп. 7, лит. А., БЦ «У Пирса», вход 3, офис 2411.
 					.delivery-main-col-shadow-tab.delivery-top-tab.tabs-tab(id="tab2")
-						.delivery-top-tab__title Доставка
-						.delivery-top-tab__subtitle По всей России
+						h2.delivery-top-tab__title Доставка
+						h3p.delivery-top-tab__subtitle По всей России
 						p • Доставка заказа курьером осуществляется в наиболее удобное для Вас время курьерской службой Pony Express. Узнав у наших консультантов номер накладной, Вы сможете самостоятельно следить за местонахождением своего товара на сайте курьерской службы.
 				.delivery-main-col-shadow
-					.delivery-main-col-shadow__title Наши реквизиты
+					h2.delivery-main-col-shadow__title Наши реквизиты
 					.delivery-main-col-shadow-row
 						span Название:
 						span ООО «АйТи Прогресс Трейд»
@@ -66,13 +66,13 @@ block content
 			.delivery-main-col
 				.delivery-main-col-shadow
 					.product-main-col-moreinfo
-						.product-main-col-moreinfo__title Электронная версия
+						h3.product-main-col-moreinfo__title Электронная версия
 						ul.product-main-col-moreinfo-list
 							li Лицензия высылается Вам по электронной почте. При покупке корпоративных продуктов электронная лицензия может дублироваться бумажной.
 						<svg style="" width="1201" height="2" viewBox="0 0 1201 2" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<line x1="0.986206" y1="1.43503" x2="1200.99" y2="1.43503" stroke="black" stroke-opacity="0.15"/>
 						</svg>
-						.product-main-col-moreinfo__title Физическая версия
+						h3.product-main-col-moreinfo__title Физическая версия
 						ul.product-main-col-moreinfo-list
 							li Вы получаете коробочную версию программы, содержащую загрузочный диск и всю необходимую документацию.
-						.product-main-col-moreinfo__bot Доставка для некоторых товаров бесплатна
+						p.product-main-col-moreinfo__bot Доставка для некоторых товаров бесплатна

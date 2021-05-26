@@ -1,157 +1,179 @@
-.main-form{
-	background: rgba(0, 69, 139, 0.1);
-	&-wrap{
-		max-width: 1275px;
-		margin: 0 auto;
-		padding: 60px 40px 100px;
-		&__subtitle{
-			@include subtitle;
-			color: var(--subzero);
-			margin-bottom: 10px;
-		}
-		&__title{
-			@include big-title;
-			margin-bottom: 80px;
-		}
-		.general-form{
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			.general-itemInput{
-				position: relative;
-				min-height: 41px;
-				box-sizing: border-box;
-				margin-bottom: 40px;
-				width: 100%;
-				&.general-itemInput_25{
-					width: calc(100% / 4 - (90px / 4));
-				}
-				&.general-itemInput_33{
-					width: calc(100% / 3 - (60px / 3));
-				}
-				&.general-itemInput_50{
-					width: calc(100% / 2 - (30px / 2));
-				}
-				&__input{
-					border: none;
-					border-bottom: 1.5px solid rgba(0, 0, 0, 0.35);
-					height: 100%;
-					width: 100%;
-					padding-top: 7px;
-					background: none;
-					&:focus{
-						border-bottom: 1.5px solid #00458B;
-					}
-					&.input-border{
-						border-bottom: 1.5px solid rgba(0, 0, 0, 0.75);
-					}
-					&.input-err{
-						border-bottom: 1.5px solid red;
-					}
-				}
-			}
-			.general-bottomBlock{
-				display: flex;
-				align-items: center;
-				button{
-					margin-right: 20px;
-					border-radius: 5px;
-					width: 210px;
-					height: 50px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					background: var(--burgundi);
-					@include button-text;
-					color: var(--have-rights);
-					border: none;
-					transition: .3s;
-					cursor: pointer;
-					@media screen and (min-width:1200px){
-						&:hover{
-							opacity: 0.8;
-						}
-						&:active{
-							opacity: 1;
-						}
-					}
-				}
-				p{
-					@include description;
-					color: rgba(0, 0, 0, 0.7);
-					max-width: 230px;
-					a{
-						color: var(--burgundi);
-						display: inline-block;
-						margin-left: 3px;
-					}
-				}
-			}
-		}
-	}
+.main-form {
+  background: rgba(0, 69, 139, 0.1);
+  &-wrap {
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+    &__subtitle {
+      @include subtitle;
+      color: var(--subzero);
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    &__title {
+      @include big-title;
+      margin-top: 0;
+      margin-bottom: 71px;
+    }
+    .general-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .general-itemInput {
+        position: relative;
+        min-height: 41px;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+        width: 100%;
+        &.general-itemInput_25 {
+          width: calc(100% / 4 - (90px / 4));
+        }
+        &.general-itemInput_33 {
+          width: calc(100% / 3 - (60px / 3));
+        }
+        &.general-itemInput_50 {
+          width: calc(100% / 2 - (30px / 2));
+        }
+        &__input {
+          border: none;
+          border-bottom: 1.5px solid rgba(0, 0, 0, 0.35);
+          height: 100%;
+          width: 100%;
+          padding-top: 7px;
+          background: none;
+          &:hover,
+          &:focus {
+            border-bottom: 1.5px solid #00458b;
+          }
+          &.input-border {
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.75);
+          }
+          &.input-err {
+            border-bottom: 1.5px solid red;
+          }
+        }
+      }
+      .general-bottomBlock {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        button {
+          margin-right: 20px;
+          border-radius: 5px;
+          width: 210px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--burgundi);
+          @include button-text;
+          color: var(--have-rights);
+          border: none;
+          transition: 0.3s;
+          cursor: pointer;
+          @media screen and (min-width: 1200px) {
+            &:hover,
+            &:focus {
+              background: #e94b52;
+            }
+            &:active {
+              background: var(--burgundi);
+            }
+          }
+          @media screen and (max-width: 1200px) {
+            &:active {
+              background: #e94b52;
+            }
+          }
+        }
+        p {
+          @include description;
+          color: rgba(0, 0, 0, 0.7);
+          max-width: 230px;
+          a {
+            color: var(--burgundi);
+            display: inline-block;
+            margin-left: 3px;
+            transition: color 0.2s;
+            @media screen and (min-width: 1200px) {
+              &:hover,
+              &:focus {
+                color: var(--subzero);
+              }
+            }
+            @media screen and (max-width: 1200px) {
+              &:active {
+                color: var(--subzero);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-@include w1024{
-	.main-form{
-		&-wrap{
-			padding: 60px 40px;
-			&__subtitle{
-				@include small-small-title;
-			}
-			&__title{
-				@include big-title24;
-				margin-bottom: 40px;
-			}
-			.general-form {
-				.general-itemInput__input{
-					@include text14;
-				}
-				.general-bottomBlock{
-					button{
-						@include tab;
-						width: 166px;
-						height: 40px;
-					}
-				}
-			} 
-		}
-	}
+@include w1024 {
+  .main-form {
+    &-wrap {
+      padding: 60px 40px;
+      &__subtitle {
+        @include small-small-title;
+      }
+      &__title {
+        @include big-title24;
+        margin-bottom: 40px;
+      }
+      .general-form {
+        .general-itemInput__input {
+          @include text14;
+        }
+        .general-bottomBlock {
+          button {
+            @include tab;
+            width: 166px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
 }
 
-@include w480{
-	.main-form{
-		&-wrap{
-			padding: 60px 20px;
-			.general-form {
-				.general-itemInput{
-					&.general-itemInput_25,
-					&.general-itemInput_33,
-					&.general-itemInput_50{
-						width: 100%;
-					}
-				}
-				.general-bottomBlock{
-					flex-direction: column;
-					align-items: center;
-					width: 100%;
-					button{
-						width: 100%;
-						margin-bottom: 20px;
-						margin-right: 0;
-					}
-					p{
-						text-align: center;
-					}
-				}
-			} 
-		}
-	}
+@include w480 {
+  .main-form {
+    &-wrap {
+      padding: 60px 20px;
+      .general-form {
+        .general-itemInput {
+          &.general-itemInput_25,
+          &.general-itemInput_33,
+          &.general-itemInput_50 {
+            width: 100%;
+          }
+        }
+        .general-bottomBlock {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          button {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
-@include w320{
-	.main-form{
-		&-wrap{
-			padding: 60px 10px;
-		}
-	}
+@include w320 {
+  .main-form {
+    &-wrap {
+      padding: 60px 10px;
+    }
+  }
 }

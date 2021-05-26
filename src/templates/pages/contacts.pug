@@ -8,19 +8,19 @@ block content
 	.contacts.container.tabs
 		.contacts-info
 			.contacts-info-row
-				.contacts-info-row__title Работаем в пн-пт с 9.00 до 18.00 по всей России
+				p.contacts-info-row__title Работаем в пн-пт с 9.00 до 18.00 по всей России
 				a.contacts-info-row__link(href="tel:88005051503") 8 (800) 505-15-03
 				a.contacts-info-row__link(href="mailto:info@itprogress.ru") info@itprogress.ru
 			.contacts-info-row
-				.contacts-info-row__title Москва
-				a.contacts-info-row__address.tabs-navigation-item(href="#moscow") ул. Кировоградская, д. 23А, корп.1
+				span.contacts-info-row__title Москва
+				button.contacts-info-row__address.tabs-navigation-item(data-tab="#moscow") ул. Кировоградская, д. 23А, корп.1
 				a.contacts-info-row__link(href="tel:84996488688") 8 (499) 648-86-88
 			.contacts-info-row
-				.contacts-info-row__title Санкт-Петербург
-				a.contacts-info-row__address.tabs-navigation-item(href="#spb") пр. Обуховской обороны, д.112, корп. 2, лит. И, БЦ "Вант", оф. 103
+				span.contacts-info-row__title Санкт-Петербург
+				button.contacts-info-row__address.tabs-navigation-item(data-tab="#spb") пр. Обуховской обороны, д.112, корп. 2, лит. И, БЦ "Вант", оф. 103
 				a.contacts-info-row__link(href="tel:88126600808") 8 (812) 660-08-08
 		.contacts-map
-			img(src="assets/images/preloader.svg", alt="")
+			img(src="assets/images/preloader.svg" alt="")
 			.contacts-map__overlay Кликните для просмотра карты
 			.contacts-map-tab.tabs-tab(id="moscow")
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acececb2514c84df63aba6f9d2ebba2e35fa8c343dc4a316e6ffc8a4e1718fbab&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>

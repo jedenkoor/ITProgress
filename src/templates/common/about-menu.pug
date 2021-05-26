@@ -1,6 +1,11 @@
-.about-menu#horizontalMenu
-	a.about-menu__item(class={active: currentUrl === '/documents'} href="documents.html") Документы
-	a.about-menu__item(class={active: currentUrl === '/team'} href="team.html") Наша команда
-	a.about-menu__item(class={active: currentUrl === '/clients'} href="clients.html") Наши клиенты
-	a.about-menu__item(class={active: currentUrl === '/partners'} href="partners.html") Наши партнёры
-	a.about-menu__item(class={active: currentUrl === '/career'} href="career.html") Карьера
+ul.about-menu#horizontalMenu
+	li.about-menu__item
+		a.about-menu__link(class={active: currentUrl === '/documents'} href="documents.html") Документы
+	li.about-menu__item
+		a.about-menu__link(class={active: currentUrl === '/team'} href="team.html") Наша команда
+	li.about-menu__item
+		a.about-menu__link(class={active: currentUrl === '/clients'} href="clients.html") Наши клиенты
+	li.about-menu__item
+		a.about-menu__link(class={active: currentUrl === '/partners'} href="partners.html") Наши партнёры
+	li.about-menu__item
+		a.about-menu__link(class={active: currentUrl === '/career'} href="career.html") Карьера

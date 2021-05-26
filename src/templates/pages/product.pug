@@ -7,14 +7,14 @@ block content
 	.product.container
 		.product-top
 			.product-top-img
-				img(src="assets/images/product.png", alt="")
+				img(src="assets/images/product.png" alt="1С: Документооборот")
 			.product-top-info
 				h1.product-top-info__title 1С: Документооборот
-				.product-top-info__text Полный контроль над всей документацией. «1С:Документооборот» — это современная система для управления документами, бизнес-процессами и взаимодействием сотрудников.
+				p.product-top-info__text Полный контроль над всей документацией. «1С:Документооборот» — это современная система для управления документами, бизнес-процессами и взаимодействием сотрудников.
 				.product-top-info-btns
 					.product-top-info-btns-col 
 						a.product-top-info-btns-col__buy(href="#") Купить
-						.product-top-info-btns-col__price 36 000 ₽
+						span.product-top-info-btns-col__price 36 000 ₽
 					.product-top-info-btns-col 
 						a.product-top-info-btns-col__rent(href="#") Арендовать
 						.product-top-info-btns-col__rentprice
@@ -22,15 +22,20 @@ block content
 							span за 1 пользователя
 					.product-top-info-btns-col
 						a.product-top-info-btns-col__demo(href="#") Заказать демо-доступ
-						.product-top-info-btns-col__demoprice Бесплатно
+						span.product-top-info-btns-col__demoprice Бесплатно
 		.product-main
 			.product-main-col.tabsborder.tabs
-				.product-main-col-navigation.tabsborder-navigation
-					a.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(href="#tab1") Назначение продукта
-					a.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#tab2") Описание
-					a.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#tab3") Выбор версии
-					a.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#tab4") Услуги
-					a.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(href="#tab5") Истории успеха
+				ul.product-main-col-navigation.tabsborder-navigation
+					li
+						button.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item.active(data-tab="#tab1") Назначение продукта
+					li
+						button.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#tab2") Описание
+					li
+						button.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#tab3") Выбор версии
+					li
+						button.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#tab4") Услуги
+					li
+						button.product-main-col-navigation__item.tabsborder-navigation__item.tabs-navigation-item(data-tab="#tab5") Истории успеха
 				.product-main-col-tab.tabs-tab(id="tab1")
 					h2.product-main-col-tab__title Назначение продукта
 					p «1С:Бухгалтерия 8» — это универсальное решение для автоматизации бухгалтерского, налогового учета и подготовки отчетности в компаниях любого масштаба.
@@ -64,12 +69,11 @@ block content
 					p «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 			.product-main-col
 				.product-main-col-moreinfo
-					.product-main-col-moreinfo__title Бесплатно при покупке *
+					h3.product-main-col-moreinfo__title Бесплатно при покупке *
 					ul.product-main-col-moreinfo-list
 						li Доставка и установка
 						li Обновления через интернет
 						li Линия консультаций 24/7
 						li Доступ к 1С:Отчетность
-					.product-main-col-moreinfo__bot * В зависимости от выбранной версии
+					p.product-main-col-moreinfo__bot * В зависимости от выбранной версии
 
-	

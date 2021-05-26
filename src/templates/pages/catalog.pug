@@ -15,45 +15,58 @@ block content
 				input(type="radio" name="sort" id="radio2")
 				label(for="radio2") Назначению
 
-		.catalog-items
-			.catalog-items-item
+		ul.catalog-items
+			li.catalog-items-item
 				.catalog-items-item-img
-					img(src="assets/images/main-way1.svg", alt="")
+					img(src="assets/images/main-way1.svg" alt="")
 				.catalog-items-item-info
-					.catalog-items-item-info__title Регламентированный учет
-					.catalog-items-item-info-links
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Бухгалтерия 8
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Зарплата и управление персоналом 8
-			.catalog-items-item
+					h2.catalog-items-item-info__title Регламентированный учет
+					ul.catalog-items-item-info-links
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Бухгалтерия 8
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Зарплата и управление персоналом 8
+			li.catalog-items-item
 				.catalog-items-item-img
-					img(src="assets/images/main-way2.svg", alt="")
+					img(src="assets/images/main-way2.svg" alt="")
 				.catalog-items-item-info
-					.catalog-items-item-info__title Торговый и складской учет
-					.catalog-items-item-info-links
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Управление торговлей 8
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. CRM
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Розница 8
-			.catalog-items-item
+					h2.catalog-items-item-info__title Торговый и складской учет
+					ul.catalog-items-item-info-links
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Управление торговлей 8
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. CRM
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Розница 8
+			li.catalog-items-item
 				.catalog-items-item-img
-					img(src="assets/images/main-way3.svg", alt="")
+					img(src="assets/images/main-way3.svg" alt="")
 				.catalog-items-item-info
-					.catalog-items-item-info__title Управленческий учет
-					.catalog-items-item-info-links
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Управление нашей фирмой 8
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. Управляющий
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Документооборот 8
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Договорчики 8
-			.catalog-items-item
+					h2.catalog-items-item-info__title Управленческий учет
+					ul.catalog-items-item-info-links
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Управление нашей фирмой 8
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. Управляющий
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Документооборот 8
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Договорчики 8
+			li.catalog-items-item
 				.catalog-items-item-img
-					img(src="assets/images/main-way4.svg", alt="")
+					img(src="assets/images/main-way4.svg" alt="")
 				.catalog-items-item-info
-					.catalog-items-item-info__title Торговый и складской учет
-					.catalog-items-item-info-links
-						a.catalog-items-item-info-links__link(href="product.html") 1С:ERP Управление предприятием 2
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. Комплект прикладных решений на 5 пользователей
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Комплексная автоматизация 8
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Корпорация
-						a.catalog-items-item-info-links__link(href="product.html") 1С:Управление холдингом 8
-			a.catalog-items__more(href="#") Смотреть по назначению
-		
+					h2.catalog-items-item-info__title Торговый и складской учет
+					ul.catalog-items-item-info-links
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:ERP Управление предприятием 2
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Предприятие 8. Комплект прикладных решений на 5 пользователей
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Комплексная автоматизация 8
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Корпорация
+						li
+							a.catalog-items-item-info-links__link(href="product.html") 1С:Управление холдингом 8
+
 	include ../common/form.pug

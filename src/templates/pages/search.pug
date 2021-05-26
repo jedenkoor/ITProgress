@@ -6,14 +6,19 @@ block variables
 block content
 	h1.title Результаты поиска “1C”
 	.search.container
-		a.search-item(href="#")
-			.search-item__category О компании
-			.search-item__title Вакансии
-			.search-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vero voluptatibus sequi illo repellendus, totam natus minus assumenda officiis sed dignissimos adipisci eius ut, eos, quasi nesciunt vel a est?
-		a.search-item(href="#")
-			.search-item__category 10 советов разработчику 1С
-			.search-item__title 10 советов разработчику 1С
-			.search-item__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore aut quis, error impedit at dolorem voluptas soluta sequi repellat!
+		.search-main
+			.search-main-col
+				ul.search-list
+					li.search-list-item
+						a.search-item(href="#")
+							h3.search-item__category О компании
+							h2.search-item__title Вакансии
+							p.search-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vero voluptatibus sequi illo repellendus, totam natus minus assumenda officiis sed dignissimos adipisci eius ut, eos, quasi nesciunt vel a est?
+					li.search-list-item
+						a.search-item(href="#")
+							h3.search-item__category 10 советов разработчику 1С
+							h2.search-item__title 10 советов разработчику 1С
+							p.search-item__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore aut quis, error impedit at dolorem voluptas soluta sequi repellat!
 		.career-bot
 			span Не нашли, что искали? Напишите нам.
 			a.career-bot__btn(href="mailto:info@itprogress.ru") Написать на info@itprogress.ru

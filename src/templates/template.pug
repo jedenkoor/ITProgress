@@ -9,14 +9,30 @@ html
 		meta(content="" name="keywords")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(content="ie=edge" http-equiv="x-ua-compatible")
-		link(rel="shortcut icon" href="assets/images/apple-touch-icon.png" type="image/x-icon")
-		link(rel="apple-touch-icon" href="assets/images/apple-touch-icon.png")
+
+		<meta property="og:site_name" content="ITProgress">
+		<meta property="og:title" content="ITProgress">
+		<meta property="og:description" content="ITProgress">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://itprogress.a-project.dev/">
+		<meta property="og:image" content="/assets/images/og-share-img.jpg">
+		<meta property="og:image:width" content="1800">
+		<meta property="og:image:height" content="945">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#00458b">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
 		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet")
 		link(rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.min.css")
 		link(rel="stylesheet" type="text/css" href="assets/scripts/slick/slick.css")
 		link(rel="stylesheet" type="text/css" href="assets/scripts/slick/slick-theme.css")
 		link(rel="stylesheet" type="text/css" href="assets/styles/app.min.css")
-		
+
 	body
 		.wrapper
 			include common/header.pug
@@ -25,7 +41,7 @@ html
 			include common/footer.pug 
 
 		script(src="assets/scripts/jquery.js")
-		script(src="assets/scripts/jquery.inputmask.bundle.js")
+		script(src="assets/scripts/inputmask.js")
 		script(src="assets/scripts/fancybox/jquery.fancybox.min.js")
 		script(src="assets/scripts/slick/slick.min.js")
 		script(src="assets/scripts/masonry.min.js")

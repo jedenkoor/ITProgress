@@ -7,12 +7,12 @@ block content
 	.banner-block.block(style="background: linear-gradient(to right, #E6EDF4, #B8BEC3)")
 		.banner-block-wrap
 			.banner-block-wrap-info
-				.banner-block-wrap-info__title 1С: Документооборот
-				.banner-block-wrap-info__text Версия: 8 Профессиональная
+				p.banner-block-wrap-info__title 1С: Документооборот
+				p.banner-block-wrap-info__text Версия: 8 Профессиональная
 				a.banner-block-wrap-info__btn(href="#") Купить
 			.banner-block-wrap__img
-				img(src="assets/images/banner-img.png", alt="")
-	
+				img(src="assets/images/banner-img.png" alt="1С: Документооборот")
+
 	.tabsAndIllustratedLinks.container
 		form.catalog-sort(action="#")
 			span Сортировать по:
@@ -22,55 +22,58 @@ block content
 			.catalog-sort-item
 				input(type="radio" name="sort" id="radio2")
 				label(for="radio2") Назначению
-		.tabsAndIllustratedLinks-items
+		ul.tabsAndIllustratedLinks-items
 			-for(var i = 0; i < 3; i++)
-				a.tabsAndIllustratedLinks-items-item(href="#")
-					.tabsAndIllustratedLinks-items-item__img
-						img(src="assets/images/main-way1.svg", alt="")
-					.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
-				a.tabsAndIllustratedLinks-items-item(href="#")
-					.tabsAndIllustratedLinks-items-item__img
-						img(src="assets/images/main-way2.svg", alt="")
-					.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
-				a.tabsAndIllustratedLinks-items-item(href="#")
-					.tabsAndIllustratedLinks-items-item__img
-						img(src="assets/images/main-way3.svg", alt="")
-					.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
+				li
+					a.tabsAndIllustratedLinks-items-item(href="#")
+						.tabsAndIllustratedLinks-items-item__img
+							img(src="assets/images/main-way1.svg" alt="Cargo Мультимодальные перевозки")
+						.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
+				li
+					a.tabsAndIllustratedLinks-items-item(href="#")
+						.tabsAndIllustratedLinks-items-item__img
+							img(src="assets/images/main-way2.svg" alt="Cargo Мультимодальные перевозки")
+						.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
+				li
+					a.tabsAndIllustratedLinks-items-item(href="#")
+						.tabsAndIllustratedLinks-items-item__img
+							img(src="assets/images/main-way3.svg" alt="Cargo Мультимодальные перевозки")
+						.tabsAndIllustratedLinks-items-item__title Cargo Мультимодальные перевозки
 
 	.numeratedList.container 
 		.block__title Пронумерованный список
-		.numeratedList-items
+		ul.numeratedList-items
 			-for(var i = 0; i < 6; i++)
-				.numeratedList-items-item Мы любим свое дело, с радостью каждое утро идем в офис, работаем сообща, и это действительно видно по нашей работе.
+				li.numeratedList-items-item Мы любим свое дело, с радостью каждое утро идем в офис, работаем сообща, и это действительно видно по нашей работе.
 
 	.illustratedAdvantages.container
 		.block__title Здесь перечень со слайдером
-		.illustratedAdvantages-items.slider
-			.illustratedAdvantages-items-item
+		ul.illustratedAdvantages-items.slider
+			li.illustratedAdvantages-items-item
 				.illustratedAdvantages-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
-				.illustratedAdvantages-items-item__title Первый пункт
-				.illustratedAdvantages-items-item__text Подпись к пункту
-			.illustratedAdvantages-items-item
+					img(src="assets/images/main-way1.svg" alt="Первый пункт")
+				p.illustratedAdvantages-items-item__title Первый пункт
+				p.illustratedAdvantages-items-item__text Подпись к пункту
+			li.illustratedAdvantages-items-item
 				.illustratedAdvantages-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
-				.illustratedAdvantages-items-item__title Второй пункт
-				.illustratedAdvantages-items-item__text Подпись к пункту
-			.illustratedAdvantages-items-item
+					img(src="assets/images/main-way1.svg" alt="Второй пункт")
+				p.illustratedAdvantages-items-item__title Второй пункт
+				p.illustratedAdvantages-items-item__text Подпись к пункту
+			li.illustratedAdvantages-items-item
 				.illustratedAdvantages-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
-				.illustratedAdvantages-items-item__title Третий пункт
-				.illustratedAdvantages-items-item__text Подпись к пункту
-			.illustratedAdvantages-items-item
+					img(src="assets/images/main-way1.svg" alt="Третий пункт")
+				p.illustratedAdvantages-items-item__title Третий пункт
+				p.illustratedAdvantages-items-item__text Подпись к пункту
+			li.illustratedAdvantages-items-item
 				.illustratedAdvantages-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
-				.illustratedAdvantages-items-item__title Четвертый пункт
-				.illustratedAdvantages-items-item__text Подпись к пункту
-			.illustratedAdvantages-items-item
+					img(src="assets/images/main-way1.svg" alt="Четвертый пункт")
+				p.illustratedAdvantages-items-item__title Четвертый пункт
+				p.illustratedAdvantages-items-item__text Подпись к пункту
+			li.illustratedAdvantages-items-item
 				.illustratedAdvantages-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
-				.illustratedAdvantages-items-item__title Четвертый пункт
-				.illustratedAdvantages-items-item__text Подпись к пункту
+					img(src="assets/images/main-way1.svg" alt="Четвертый пункт")
+				p.illustratedAdvantages-items-item__title Четвертый пункт
+				p.illustratedAdvantages-items-item__text Подпись к пункту
 
 	.tabs-wrap.container
 		.tabsborder.tabs
@@ -131,7 +134,7 @@ block content
 			.priceblocks4-item__pricespan Цена продления
 			.priceblocks4-item__price 60 600 руб.
 			a.priceblocks4-item__btn(href="#") Заказать
-		 
+
 	.dropDownlists.container
 		.block__title Разворачивающиеся списки
 		.dropDownlists-items
@@ -173,13 +176,13 @@ block content
 		.block__title Cписок с описанием элементов
 		.listWithDescription-item
 			.listWithDescription-item__img
-				img(src="assets/images/main-way2.svg", alt="")
+				img(src="assets/images/main-way2.svg" alt="")
 			.listWithDescription-item-info
 				.listWithDescription-item-info__title Заголовок
 				.listWithDescription-item-info__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 		.listWithDescription-item
 			.listWithDescription-item__img
-				img(src="assets/images/main-way1.svg", alt="")
+				img(src="assets/images/main-way1.svg" alt="")
 			.listWithDescription-item-info
 				.listWithDescription-item-info__title Заголовок
 				.listWithDescription-item-info__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С». «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С». «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
@@ -226,25 +229,25 @@ block content
 			.listWithDescriptionCol2-items-item
 				.listWithDescriptionCol2-items-item-top
 					.listWithDescriptionCol2-items-item-top__img
-						img(src="assets/images/main-way1.svg", alt="")
+						img(src="assets/images/main-way1.svg" alt="")
 					.listWithDescriptionCol2-items-item-top__title Заголовок длиной до пяти слов
 				.listWithDescriptionCol2-items-item-bot «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 			.listWithDescriptionCol2-items-item
 				.listWithDescriptionCol2-items-item-top
 					.listWithDescriptionCol2-items-item-top__img
-						img(src="assets/images/main-way3.svg", alt="")
+						img(src="assets/images/main-way3.svg" alt="")
 					.listWithDescriptionCol2-items-item-top__title Заголовок длиной до пяти слов
 				.listWithDescriptionCol2-items-item-bot «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 			.listWithDescriptionCol2-items-item
 				.listWithDescriptionCol2-items-item-top
 					.listWithDescriptionCol2-items-item-top__img
-						img(src="assets/images/main-way2.svg", alt="")
+						img(src="assets/images/main-way2.svg" alt="")
 					.listWithDescriptionCol2-items-item-top__title Заголовок длиной до пяти слов
 				.listWithDescriptionCol2-items-item-bot «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 			.listWithDescriptionCol2-items-item
 				.listWithDescriptionCol2-items-item-top
 					.listWithDescriptionCol2-items-item-top__img
-						img(src="assets/images/main-way4.svg", alt="")
+						img(src="assets/images/main-way4.svg" alt="")
 					.listWithDescriptionCol2-items-item-top__title Заголовок длиной до пяти слов
 				.listWithDescriptionCol2-items-item-bot «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
 
@@ -268,26 +271,26 @@ block content
 			-for(var i = 0; i < 6; i++)
 				a.gallery-items-item(href="assets/images/gallery.png" data-fancybox="gallery"+i)
 					.gallery-items-item__img
-						img(src="assets/images/gallery.png", alt="")
+						img(src="assets/images/gallery.png" alt="")
 
 	.listWithoutTitleCol3.container
 		.block__title Список без заголовка в 3 колонки
 		.listWithoutTitleCol3-items
 			.listWithoutTitleCol3-items-item
 				.listWithoutTitleCol3-items-item__img
-					img(src="assets/images/main-way1.svg", alt="")
+					img(src="assets/images/main-way1.svg" alt="")
 				.listWithoutTitleCol3-items-item__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия.
 			.listWithoutTitleCol3-items-item
 				.listWithoutTitleCol3-items-item__img
-					img(src="assets/images/main-way2.svg", alt="")
+					img(src="assets/images/main-way2.svg" alt="")
 				.listWithoutTitleCol3-items-item__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия.
 			.listWithoutTitleCol3-items-item
 				.listWithoutTitleCol3-items-item__img
-					img(src="assets/images/main-way3.svg", alt="")
+					img(src="assets/images/main-way3.svg" alt="")
 				.listWithoutTitleCol3-items-item__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия.
 			.listWithoutTitleCol3-items-item
 				.listWithoutTitleCol3-items-item__img
-					img(src="assets/images/main-way4.svg", alt="")
+					img(src="assets/images/main-way4.svg" alt="")
 				.listWithoutTitleCol3-items-item__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия.
 
 	.tariffs.container
@@ -346,7 +349,7 @@ block content
 		.listWithContent-item
 			.listWithContent-item-top
 				.listWithContent-item-top__img
-					img(src="assets/images/main-way1.svg", alt="")
+					img(src="assets/images/main-way1.svg" alt="")
 				.listWithContent-item-top-info
 					.listWithContent-item-top-info__title Заголовок длиной до пяти слов
 					.listWithContent-item-top-info__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
@@ -359,7 +362,7 @@ block content
 		.listWithContent-item
 			.listWithContent-item-top
 				.listWithContent-item-top__img
-					img(src="assets/images/main-way2.svg", alt="")
+					img(src="assets/images/main-way2.svg" alt="")
 				.listWithContent-item-top-info
 					.listWithContent-item-top-info__title Заголовок длиной до пяти слов
 					.listWithContent-item-top-info__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
@@ -398,4 +401,4 @@ block content
 					a.calc-block-bot__btn(href="#") Оставить заявку
 			.calc-block-bot
 				.calc-block-bot__text «1С:Бухгалтерия 8» позволяет в комплексе решать все задачи, стоящие перед бухгалтерией предприятия, и является самым востребованным на российском рынке продуктом линейки «1С».
-				
+

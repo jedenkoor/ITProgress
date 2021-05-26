@@ -1,120 +1,153 @@
-.career{
-	&-item{
-		background: #FFFFFF;
-		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-		border-radius: 10px;
-		margin-bottom: 20px;
-		display: flex;
-		align-items: center;
-		padding: 40px 20px; 
-		&__title{
-			@include small-title;
-			flex: 0 0 40%;
-			padding-right: 20px;
-		}
-		&__text{
-			@include text;
-			flex: 0 0 60%;
-			color: var(--gray-cardinal);
-		}
-	}
-	&-bot{
-		position: relative;
-		margin-top: 40px;
-		span{
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		&__btn{
-			margin: 0 auto;
-			width: 327px;
-			height: 50px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border: 1px solid var(--burgundi);
-			border-radius: 5px;
-			@include button-text;
-			color: var(--burgundi);
-			transition: .3s;
-			svg{
-				margin-left: 20px;
-				path{
-					transition: .3s;
-				}
-			}
-			@media screen and (min-width:1200px){
-				&:hover{
-					background: rgba(227, 30, 39, 0.1);
-				}
-				&:active{
-					background: var(--burgundi);
-					color: var(--have-rights);
-					svg path{
-						fill: var(--have-rights);
-					}
-				}
-			}
-		}
-	}
+.career {
+  .career-bot {
+    width: 66.7%;
+    &__btn {
+      margin-right: 0;
+    }
+  }
+  &-item {
+    background: #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 37px 20px;
+    transition: color 0.2s;
+    @media screen and (min-width: 1200px) {
+      &:hover,
+      &:focus {
+        color: var(--subzero);
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      &:active {
+        color: var(--subzero);
+      }
+    }
+    &__title {
+      @include small-title;
+      flex: 0 0 42.3%;
+      padding-right: 20px;
+      margin: 0;
+    }
+    &__text {
+      @include text;
+      flex: 0 0 47.7%;
+      color: var(--gray-cardinal);
+      margin: 0px;
+    }
+  }
+  &-bot {
+    position: relative;
+    margin-top: 40px;
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__btn {
+      margin: 0 auto;
+      width: 328px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--burgundi);
+      border-radius: 5px;
+      @include button-text;
+      color: var(--burgundi);
+      transition: 0.3s;
+      svg {
+        margin-left: 20px;
+        path {
+          transition: 0.3s;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        &:hover,
+        &:focus {
+          background: rgba(227, 30, 39, 0.1);
+        }
+        &:active {
+          background: var(--burgundi);
+          color: var(--have-rights);
+          svg path {
+            fill: var(--have-rights);
+          }
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        &:active {
+          background: var(--burgundi);
+          color: var(--have-rights);
+          svg path {
+            fill: var(--have-rights);
+          }
+        }
+      }
+    }
+  }
 }
 
-@include w1024{
-	.career{
-		&-item{
-			padding: 35px 20px;
-			&__title{
-				flex: 0 0 65%;
-			}
-			&__text{
-				flex: 0 0 25%;
-			}
-		}
-		&-bot{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			span{
-				position: static;
-				transform: none;
-				max-width: 260px;
-			}
-			&__btn{
-				margin: 0;
-				height: 46px;
-			}
-		}
-	}
+@include w1024 {
+  .career {
+    .career-bot {
+      width: 100%;
+    }
+    &-item {
+      padding: 35px 20px;
+      &__title {
+        flex: 0 0 65%;
+      }
+      &__text {
+        flex: 0 0 25%;
+      }
+    }
+    &-bot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        position: static;
+        transform: none;
+        max-width: 260px;
+      }
+      &__btn {
+        margin: 0;
+        height: 46px;
+      }
+    }
+  }
 }
 
-@include w480{
-	.career{
-		&-item{
-			flex-direction: column-reverse;
-			align-items: flex-start;
-			padding: 20px;
-			&__title{
-				@include small-title18;
-				padding-right: 0;
-			}
-			&__text{
-				@include text14;
-				margin-bottom: 5px;
-			}
-		}
-		&-bot{
-			flex-direction: column;
-			align-items: flex-start;
-			span{
-				margin-bottom: 20px;
-				max-width: none;
-				@include text14;
-			}
-			&__btn{
-				width: 100%;
-			}
-		}
-	}
+@include w480 {
+  .career {
+    &-item {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 20px;
+      &__title {
+        @include small-title18;
+        padding-right: 0;
+      }
+      &__text {
+        @include text14;
+        margin-bottom: 5px;
+      }
+    }
+    &-bot {
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-bottom: 20px;
+        max-width: none;
+        @include text14;
+      }
+      &__btn {
+        width: 100%;
+      }
+    }
+  }
 }

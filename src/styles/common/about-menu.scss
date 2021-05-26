@@ -1,57 +1,68 @@
-.about-menu{
-	max-width: 1400px;
-	width: 100%;
-	padding: 0 20px 10px;
-	margin: 40px auto 0;
-	display: flex;
-	position: relative;
-	&:after{
-		content: '';
-		display: inline-block;
-		height: 1px;
-		flex: 0 0 20px;
-	}
-	&__item{
-		border: 1px solid rgba(0, 0, 0, 0.25);
-		border-radius: 5px;
-		padding: 10px 30px;
-		margin-right: 20px;
-		@include tab;
-		color: rgba(0,0,0,0.25);
-		transition: .3s;
-		white-space: nowrap;
-		&:last-child{
-			margin-right: 0;
-		}
-		@media screen and (min-width:1200px){
-			&:hover{
-				color: var(--burgundi);
-				border: 1px solid var(--burgundi);
-			}
-			&:active{
-				background: var(--burgundi);
-				color: var(--have-rights);
-			}
-		}
-		&.active{
-			background: var(--burgundi);
-			color: var(--have-rights);
-			border: 1px solid var(--burgundi);
-		}
-	}
+.about-menu {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 40px auto 0;
+  display: flex;
+  position: relative;
+  &:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    flex: 0 0 20px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 9px 20px 8px;
+    @include tab;
+    color: rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    white-space: nowrap;
+    &:last-child {
+      margin-right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      &:hover,
+      &:focus {
+        color: var(--burgundi);
+        border: 1px solid var(--burgundi);
+      }
+      &:active {
+        background: var(--burgundi);
+        color: var(--have-rights);
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      &:active {
+        background: var(--burgundi);
+        color: var(--have-rights);
+      }
+    }
+    &.active {
+      background: var(--burgundi);
+      color: var(--have-rights);
+      border: 1px solid var(--burgundi);
+    }
+  }
 }
 
-@include w1024{
-	.about-menu{
-		overflow-x: scroll;
-	}
+@include w1024 {
+  .about-menu {
+    overflow-x: scroll;
+  }
 }
 
-@include w320{
-	.about-menu{
-		padding-left: 10px;
-		&:after{
-			flex: 0 0 10px;
-		}
-	}
+@include w320 {
+  .about-menu {
+    padding-left: 10px;
+    &:after {
+      flex: 0 0 10px;
+    }
+  }
 }

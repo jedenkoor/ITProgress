@@ -1,26 +1,26 @@
-.partners{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 60px;
-	margin-top: 40px!important;
-	&-item{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		img{
-			max-width: 100%;
-		}
-	}
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px 90px;
+  margin-top: 40px !important;
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
-@include w1024{
-	.partners{
-		grid-template-columns: repeat(3, 1fr);
-	}
+@include w1024 {
+  .partners {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@include w480{
-	.partners{
-		grid-template-columns: repeat(2, 1fr);
-	}
+@include w480 {
+  .partners {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
